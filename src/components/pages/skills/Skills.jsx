@@ -38,10 +38,15 @@ export default function Skills() {
   return (
     <>
       <section className=" relative   dark:bg-gray-500">
+        <img
+          src="me/me-3.jpg"
+          alt="me-bg"
+          className=" absolute top-0 z-0 opacity-5"
+        />
         <h3 className=" text-center    font-one text-5xl dark:text-yellow-100">
           My Skills
         </h3>
-        <hr className=" w-52 mx-auto mt-4 opacity-50"/>
+        <hr className=" mx-auto mt-4 w-52 opacity-50" />
         <div className="   md:flex ">
           {stackCircular.map((item, index) => (
             <div key={item.no} className=" mx-auto   w-28  py-5">

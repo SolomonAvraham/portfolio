@@ -27,7 +27,12 @@ export default function intro() {
   ];
   return (
     <>
-      <section  className="bg-gradient-to-b from-slate-400 py-52  dark:bg-gray-500">
+      <section className="  bg-gradient-to-b from-slate-400 py-52  dark:bg-gray-500">
+        <img
+          src="me/me-1-bg.jpg"
+          alt="me-bg"
+          className=" absolute top-0 z-0 opacity-5"
+        />
         <div className=" relative mx-auto flex h-80 w-80 justify-center overflow-hidden rounded-full bg-gradient-to-b from-slate-400  md:h-96 md:w-96 ">
           <img
             className=" mt-5   h-full opacity-70 drop-shadow-2xl dark:hidden  "

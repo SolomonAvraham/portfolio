@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Itim&display=swap');
+
+
 ::-webkit-input-placeholder {
   text-align: center;
 }
