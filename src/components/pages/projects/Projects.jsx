@@ -1,7 +1,7 @@
 import React from "react";
 import { PropagateLoader } from "react-spinners";
 export default function Projects() {
-  const keysNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const keysNum = [ 1, 2, 3, 4, 5, 6, 7, 8, 9,10];
 
   const projects = [
     {
@@ -25,13 +25,16 @@ export default function Projects() {
   ];
   return (
     <>
-      <section className=" h-full bg-gradient-to-b from-slate-400  dark:bg-gray-500">
-        <h1 className=" py-10 text-center text-5xl ">Projects</h1>
+      <section className=" h-full    dark:bg-gray-500">
+        <h1 className="   text-center font-one text-5xl dark:text-yellow-100 ">
+          Projects
+        </h1>
+        <hr className=" mx-auto mt-2 w-52  py-10 opacity-50" />
         <div className="flex flex-wrap items-center justify-center gap-10 ">
           {projects.map((item) => (
             <div
-              key={keysNum[0]}
-              className="card h-80  w-80 flex-col items-center justify-center rounded-3xl bg-gray-400 text-center font-light shadow-2xl"
+              key={item.name}
+              className="card h-80 w-80  flex-col items-center justify-center rounded-3xl bg-gray-400 text-center font-light shadow-2xl hover:scale-105 "
             >
               <div key={keysNum[1]} className="name py-5">
                 {item.name}
@@ -58,7 +61,7 @@ export default function Projects() {
               >
                 <div
                   key={keysNum[8]}
-                  className="github bg  rounded-lg border-2  p-2   hover:bg-transparent hover:font-bold"
+                  className="github bg  rounded-lg border-2  bg-slate-100  p-2  hover:bg-transparent hover:font-bold"
                 >
                   GitHub
                 </div>

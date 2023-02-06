@@ -26,6 +26,7 @@ export default function Navbar() {
             className="  ml-8  rounded-md  bg-gradient-to-t from-slate-500 to-slate-600 px-4 py-2 font-thin text-white dark:text-yellow-100"
             href="https://docs.google.com/document/d/e/2PACX-1vQ_gVjoWG5c5VFFRKeqdytnyJ2REJHP9Nazi0b2NAdZUjs4bMPGDXqCrmwC-gLP6YbpAbk8Mrdrp8bi/pub"
             target="_blank"
+            rel="noreferrer"
           >
             Resume
           </a>
