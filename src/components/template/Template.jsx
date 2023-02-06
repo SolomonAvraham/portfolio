@@ -1,7 +1,7 @@
 import React from "react";
-import { Header, Footer } from "components/features/index";
-import DarkModeProvider from "components/context/darkModeContext";
-import { Contact, Intro, Projects, Skills } from "components/pages/index";
+import { Header, Footer } from "../features/index";
+import DarkModeProvider from "../context/darkModeContext";
+import { Contact, Intro, Projects, Skills } from "../pages/index";
 export default function Template() {
   return (
     <>

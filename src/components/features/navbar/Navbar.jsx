@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill, BsSunFill } from "react-icons/bs";
-import { useDarkMode } from "components/context/darkModeContext";
+import { useDarkMode } from "../../context/darkModeContext";
 export default function Navbar() {
   const { darkMode, setDarkMode } = useDarkMode();
 
