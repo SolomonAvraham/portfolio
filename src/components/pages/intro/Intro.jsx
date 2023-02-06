@@ -27,7 +27,7 @@ export default function intro() {
   ];
   return (
     <>
-      <section className="  bg-gradient-to-b from-slate-400 py-52  dark:bg-gray-500">
+      <section className=" relative  bg-gradient-to-b from-slate-400 py-52  dark:bg-gray-500">
         <img
           src="me/me-1-bg.jpg"
           alt="me-bg"

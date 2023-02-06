@@ -20,9 +20,14 @@ export default function Contact() {
 
   return (
     <>
-      <section className=" h-screen  bg-gradient-to-t from-slate-400 py-16 dark:bg-gray-500">
+      <section className=" relative h-screen  bg-gradient-to-t from-slate-400 py-16 dark:bg-gray-500">
+        <img
+          src="me/me-1-bg-left.jpg"
+          alt="me-bg"
+          className=" absolute bottom-0 z-0 opacity-5"
+        />
         <h3 className="text-center font-one  text-5xl dark:text-yellow-100 ">
-         Contact me
+          Contact me
         </h3>
         <hr className=" mx-auto mt-2  w-52    opacity-50" />
 
@@ -61,7 +66,7 @@ export default function Contact() {
               className="  p-1 opacity-70 outline-dotted"
             />
             <button
-              className=" rounded-xl bg-slate-300  py-2  text-lg font-semibold font-two hover:bg-yellow-200 "
+              className=" rounded-xl bg-slate-300  py-2  font-two text-lg font-semibold hover:bg-yellow-200 "
               type="submit"
             >
               SEND
