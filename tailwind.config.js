@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "me-one": "url('me/me-1-bg.jpg')",
-        "me-two": "url('me/me-1.png')",
+        "me-one": "url('/public/me/me-1-bg.jpg')",
+        "me-one-left": "url('/public/me/me-1-bg-left.jpg')",
+        "me-two": "url('/public/me/me-3.jpg')",
+        "projects": "url('/public/me/Project.jpg')",
       },
       screens: {
         sm: "0px",

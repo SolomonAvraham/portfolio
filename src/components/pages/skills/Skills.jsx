@@ -37,53 +37,50 @@ export default function Skills() {
   ];
   return (
     <>
-      <section className=" relative   dark:bg-gray-500">
-        <img
-          src="me/me-3.jpg"
-          alt="me-bg"
-          className=" absolute top-0 z-0 opacity-5"
-        />
-        <h3 className=" text-center    font-one text-5xl dark:text-yellow-100">
-          My Skills
-        </h3>
-        <hr className=" mx-auto mt-4 w-52 opacity-50" />
-        <div className="   md:flex ">
-          {stackCircular.map((item, index) => (
-            <div key={item.no} className=" mx-auto   w-28  py-5">
-              <h1 className="py-5 text-center font-thin" key={item.name}>
-                {item.name}
-              </h1>
-              <CircularProgressbar
-                key={index}
-                value={item.value}
-                text={item.text}
-                styles={buildStyles({
-                  textSize: "150%",
-                  textColor: "rgb(180, 180, 180)",
-                  trailColor: "rgba(60, 60, 60,0.1)",
-                  backgroundColor: "rgb(60, 60, 60)",
-                })}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="  mx-auto grid max-w-2xl grid-cols-5 grid-rows-2 gap-5 p-5  text-center    ">
-          {stackArray.map((item, index) => (
-            <div className="  text-1xl   font-medium " key={index}>
-              <h3
-                className="animate-bounce py-5 sm:hidden md:block  "
-                key={item.name}
-              >
-                {item.name}
-              </h3>
-              <img
-                className=" animate-bounce drop-shadow-xl hover:drop-shadow-2xl"
-                src={item.img}
-                alt={item.name}
-                key={item.img}
-              />
-            </div>
-          ))}
+      <section className="     bg-me-two  bg-cover bg-fixed ">
+        <div className=" h-full   bg-gradient-to-b from-slate-500  py-24   dark:bg-gradient-to-tl">
+          <h3 className=" text-center    font-one text-5xl dark:text-yellow-100">
+            My Skills
+          </h3>
+          <hr className=" mx-auto mt-4 w-52 opacity-50" />
+          <div className="   md:flex ">
+            {stackCircular.map((item, index) => (
+              <div key={item.no} className=" mx-auto   w-28  py-5">
+                <h1 className="py-5 text-center font-thin" key={item.name}>
+                  {item.name}
+                </h1>
+                <CircularProgressbar
+                  key={index}
+                  value={item.value}
+                  text={item.text}
+                  styles={buildStyles({
+                    textSize: "150%",
+                    textColor: "#fff",
+                    trailColor: "rgba(60, 60, 60,0.1)",
+                    backgroundColor: "rgb(60, 60, 60)",
+                  })}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="  mx-auto grid max-w-2xl grid-cols-5 grid-rows-2 gap-5 p-5  text-center    ">
+            {stackArray.map((item, index) => (
+              <div className="  text-1xl   font-medium " key={index}>
+                <h3
+                  className="animate-bounce py-5 sm:hidden md:block  "
+                  key={item.name}
+                >
+                  {item.name}
+                </h3>
+                <img
+                  className=" animate-bounce drop-shadow-xl hover:drop-shadow-2xl"
+                  src={item.img}
+                  alt={item.name}
+                  key={item.img}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>
