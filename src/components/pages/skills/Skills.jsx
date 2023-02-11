@@ -39,10 +39,10 @@ export default function Skills() {
     <>
       <section className="     bg-me-two  bg-cover bg-fixed ">
         <div className=" h-full   bg-gradient-to-b from-slate-500  py-24   dark:bg-gradient-to-tl">
-          <h3 className=" text-center    font-one text-5xl dark:text-yellow-100">
+          <h3 className=" text-center    font-one text-7xl dark:text-yellow-100">
             My Skills
           </h3>
-          <hr className=" mx-auto mt-4 w-52 opacity-50" />
+          <hr className=" mx-auto mt-4 w-52 opacity-50 " />
           <div className="   md:flex ">
             {stackCircular.map((item, index) => (
               <div key={item.no} className=" mx-auto   w-28  py-5">

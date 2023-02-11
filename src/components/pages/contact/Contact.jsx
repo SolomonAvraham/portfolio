@@ -20,14 +20,14 @@ export default function Contact() {
 
   return (
     <>
-      <section className=" dark:bg-gray-500 bg-me-one-left bg-cover bg-fixed">
-        <div className=" relative h-screen  bg-gradient-to-t from-slate-400 py-16">
-          <h3 className="text-center font-one  text-5xl dark:text-yellow-100 ">
+      <section className=" bg-me-one-left bg-cover bg-fixed ">
+        <div className="     bg-gradient-to-t from-slate-400  dark:bg-gradient-to-b">
+          <h3 className="text-center font-one py-10  text-7xl dark:text-yellow-100 ">
             Contact me
           </h3>
-          <hr className=" mx-auto mt-2  w-52    opacity-50" />
+          <hr className=" mx-auto mt-2  w-52   opacity-50" />
 
-          <div className=" relative  flex items-center py-10  ">
+          <div className=" relative   flex items-center   py-10  ">
             {msg && (
               <div className="absolute left-0  right-0 z-10 m-auto flex h-28 w-52 flex-col justify-center rounded-xl bg-zinc-300 bg-opacity-95 text-center dark:bg-slate-500">
                 <span className=" text-6xl">🙏🏾</span>
@@ -35,7 +35,7 @@ export default function Contact() {
               </div>
             )}
             <form
-              className=" mx-auto flex max-w-xs flex-col gap-10"
+              className=" mx-auto flex flex-col  gap-10 md:w-96"
               ref={form}
               onSubmit={sendEmail}
             >
@@ -44,10 +44,10 @@ export default function Contact() {
                 type="text"
                 name="user_name"
                 required
-                className="  p-1 opacity-70 outline-dotted"
+                className="rounded-lg border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
               />
               <input
-                className="  p-1 opacity-70 outline-dotted"
+                className="  rounded-lg border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
                 placeholder="Email"
                 type="email"
                 name="user_email"
@@ -59,17 +59,18 @@ export default function Contact() {
                 required
                 cols="30"
                 rows="6"
-                className="  p-1 opacity-70 outline-dotted"
+                className="rounded-lg  border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
               />
               <button
-                className=" rounded-xl bg-slate-300  py-2  font-two text-lg font-semibold hover:bg-yellow-200 "
+                className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300  py-2  font-two text-lg font-semibold hover:bg-black hover:text-white dark:hover:bg-yellow-200 dark:hover:text-black"
                 type="submit"
+                disabled={msg}
               >
                 SEND
               </button>
             </form>
             <img
-              className=" w-6/12 p-4 opacity-70 dark:opacity-95  sm:hidden md:block  "
+              className=" mr-10 max-w-2xl  opacity-95    sm:hidden md:block  "
               src="others/fsd.gif"
               alt="me-1"
             />

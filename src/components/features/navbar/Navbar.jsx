@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-20 flex items-center justify-between py-4 px-7">
-      <h1 className="text-xl font-thin dark:text-yellow-100">Hire Me</h1>
+      <h1 className=" animate-bounce text-xl font-thin dark:text-yellow-100">Hire Me</h1>
       <ul className="flex items-center">
         <li>
           {!darkMode ? (

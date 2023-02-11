@@ -26,12 +26,12 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="bg-gradient-to-b from-slate-400 to-slate-200 py-5  dark:bg-gray-500">
+    <footer className="   bottom-2 bg-gradient-to-b from-slate-400 to-slate-100 py-5  dark:bg-gradient-to-t">
       <div className="flex flex-col items-center justify-center gap-3 py-5">
         <div className="flex ">
           {socialMedia.map((item, index) => (
             <a
-              className=" hover:scale-125 text-5xl m-3"
+              className=" m-3 text-5xl hover:scale-125"
               href={item.url}
               key={index}
               target="_blank"

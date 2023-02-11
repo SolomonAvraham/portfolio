@@ -25,13 +25,13 @@ export default function Projects() {
 
   return (
     <>
-      <section className="  bg-projects bg-fixed bg-center dark:mix-blend-darken">
-        <div className="h-full py-24   text-center    ">
-          <h1 className="   font-one text-7xl dark:text-yellow-200 border-2   ">
+      <section className=" dark: bg-projects bg-fixed bg-center">
+        <div className="h-full bg-gradient-to-b   from-slate-400 to-transparent  py-24  text-center dark:bg-gradient-to-t  ">
+          <h1 className="   font-one text-7xl   dark:text-yellow-100	  ">
             Projects
           </h1>
-          <hr className=" mx-auto mt-2 w-52  py-10 opacity-50 " />
-          <div className="flex flex-wrap items-center justify-center gap-10 ">
+          <hr className=" mx-auto mt-4 w-52 opacity-90 " />
+          <div className="flex flex-wrap items-center justify-center gap-10 py-10 ">
             {projects.map((item) => (
               <div
                 key={item.name}
