@@ -6,7 +6,6 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
-
 export default function intro() {
   const socialMedia = [
     {
@@ -35,7 +34,6 @@ export default function intro() {
               className=" mt-5   h-full opacity-70 drop-shadow-2xl dark:hidden  "
               src="me/me-1.png"
               alt="me-1"
-             
             />
             <img
               className="hidden    opacity-70  drop-shadow-2xl dark:block "
