@@ -1,4 +1,4 @@
-import Card from "components/features/card/Card";
+import Card from "../../features/card/Card";
 import React from "react";
 
 export default function Projects() {
