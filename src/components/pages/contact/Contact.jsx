@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [msg, setMsg] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -10,6 +11,7 @@ export default function Contact() {
     emailjs.sendForm("1111", "2222", form.current, "luLzakk9OdMNDVD6U");
     form.current.reset();
     setMsg(true);
+    setBtnDisabled(true);
   };
 
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function Contact() {
     <>
       <section className=" bg-me-one-left bg-cover bg-fixed ">
         <div className="     bg-gradient-to-t from-slate-400  dark:bg-gradient-to-b">
-          <h3 className="text-center font-one py-10  text-7xl dark:text-yellow-100 ">
+          <h3 className="py-10 text-center font-one  text-7xl dark:text-yellow-100 ">
             Contact me
           </h3>
           <hr className=" mx-auto mt-2  w-52   opacity-50" />
@@ -62,9 +64,9 @@ export default function Contact() {
                 className="rounded-lg  border-2 border-solid border-black p-1 opacity-90 focus:border-lime-700 focus:outline-none"
               />
               <button
-                className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300  py-2  font-two text-lg font-semibold hover:bg-black hover:text-white dark:hover:bg-yellow-200 dark:hover:text-black"
+                className=" rounded-xl border-2 border-solid border-slate-500 bg-slate-300 py-2  font-two  text-lg font-semibold hover:bg-black hover:text-white disabled:bg-transparent dark:hover:bg-yellow-200 dark:hover:text-black"
                 type="submit"
-                disabled={msg}
+                disabled={btnDisabled && "true"}
               >
                 SEND
               </button>

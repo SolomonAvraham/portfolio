@@ -6,7 +6,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-20 flex items-center justify-between py-4 px-7">
-      <h1 className=" animate-bounce text-xl font-thin dark:text-yellow-100">Hire Me</h1>
+      <h1 className=" animate-bounce text-xl font-thin dark:text-yellow-100 hover:text-2xl">
+        <a href="#footer"> Hire Me</a>
+      </h1>
       <ul className="flex items-center">
         <li>
           {!darkMode ? (
@@ -23,7 +25,7 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            className="  ml-8  rounded-md  bg-gradient-to-t from-slate-500 to-slate-400 px-4 py-2 font-thin text-white dark:bg-gradient-to-b dark:text-yellow-300 hover:text-lg"
+            className="  ml-8  rounded-md  bg-gradient-to-t from-slate-500 to-slate-400 px-4 py-2 font-thin text-white hover:text-lg dark:bg-gradient-to-b dark:text-yellow-300"
             href="https://docs.google.com/document/d/e/2PACX-1vQ_gVjoWG5c5VFFRKeqdytnyJ2REJHP9Nazi0b2NAdZUjs4bMPGDXqCrmwC-gLP6YbpAbk8Mrdrp8bi/pub"
             target="_blank"
             rel="noreferrer"

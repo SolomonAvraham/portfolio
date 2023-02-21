@@ -1,25 +1,16 @@
+import Card from "components/features/card/Card";
 import React from "react";
-import { PropagateLoader } from "react-spinners";
+
 export default function Projects() {
-  const keysNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const projects = [
     {
-      name: "1",
-      img: "",
-      github: "",
-      link: "",
-    },
-    {
-      name: "2",
-      img: "",
-      github: "",
-      link: "",
-    },
-    {
-      name: "3",
-      img: "",
-      github: "",
-      link: "",
+      name: "Refine Dashboard",
+      img: "others/1.png",
+      technology: "Typescript, React.js, Node.js, MongoDB",
+      description:
+        "Refine is the process of improving and optimizing a dashboard to better meet the needs of its users. This involves analyzing user feedback and usage patterns to identify areas for improvement, as well as making changes to the layout, design, and functionality of the dashboard.",
+      github: "https://github.com/SolomonAvraham/refine_dashboard",
+      projectLink: "https://refine-dashboard-web.netlify.app/",
     },
   ];
 
@@ -33,47 +24,15 @@ export default function Projects() {
           <hr className=" mx-auto mt-4 w-52 opacity-90 " />
           <div className="flex flex-wrap items-center justify-center gap-10 py-10 ">
             {projects.map((item) => (
-              <div
+              <Card
                 key={item.name}
-                className="card h-80 w-80  flex-col items-center justify-center rounded-3xl bg-gray-400 text-center font-light shadow-2xl hover:scale-105 "
-              >
-                <div key={keysNum[1]} className="name py-5">
-                  {item.name}
-                </div>
-                <hr key={keysNum[2]} className="mx-auto  w-52 opacity-30" />
-                <div
-                  key={keysNum[3]}
-                  className="pic flex h-32 cursor-pointer flex-col items-center justify-evenly py-2"
-                >
-                  <PropagateLoader
-                    key={keysNum[4]}
-                    color="#b8bcbb"
-                    size={20}
-                    speedMultiplier={1}
-                  />
-                  <h1 key={keysNum[5]} className=" ">
-                    Coming Soon!
-                  </h1>
-                </div>
-                <hr key={keysNum[6]} className="mx-auto w-52  opacity-30" />
-                <div
-                  key={keysNum[7]}
-                  className="links flex cursor-pointer flex-row justify-evenly py-10  "
-                >
-                  <div
-                    key={keysNum[8]}
-                    className="github bg  rounded-lg border-2  bg-slate-100  p-2  hover:bg-transparent hover:font-bold"
-                  >
-                    GitHub
-                  </div>
-                  <div
-                    key={keysNum[9]}
-                    className="project rounded-lg  border-2 bg-slate-100  p-2   hover:bg-transparent hover:font-bold"
-                  >
-                    Project
-                  </div>
-                </div>
-              </div>
+                name={item.name}
+                technology={item.technology}
+                img={item.img}
+                description={item.description}
+                github={item.github}
+                projectLink={item.projectLink}
+              />
             ))}
           </div>
         </div>
