@@ -4,13 +4,13 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
-      name: "Refine Dashboard",
+      name: "Property Pro",
       img: "others/1.png",
-      technology: "Typescript, React.js, Node.js, MongoDB",
+      technology: " MongoDB, Express.js, React.js, Node.js, Typescript & Refine",
       description:
-        "Refine is the process of improving and optimizing a dashboard to better meet the needs of its users. This involves analyzing user feedback and usage patterns to identify areas for improvement, as well as making changes to the layout, design, and functionality of the dashboard.",
+        "the application provides information about rental and sale houses near your area, user can easily be real estate agents by registering for the application and posting their will. I used a new framework that goes by the name Refine. which comes with built-in templates.very helpful tool.",
       github: "https://github.com/SolomonAvraham/refine_dashboard",
-      projectLink: "https://refine-dashboard-web.netlify.app/",
+      projectLink: "https://property-pro.netlify.app/",
     },
   ];
 
