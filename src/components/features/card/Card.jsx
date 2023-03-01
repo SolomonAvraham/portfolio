@@ -3,8 +3,8 @@ import React from "react";
 const Card = ({ name, img, github, projectLink, description, technology }) => {
   return (
     <>
-      <div className="card    w-80  flex-col items-center justify-center rounded-3xl bg-gray-400 text-center font-light shadow-2xl hover:scale-105 ">
-        <div className=" py-3  font-two text-3xl dark:text-gray-100 underline text-neutral-800">
+      <div className="card  w-80  flex-col items-center justify-center rounded-3xl bg-gray-400 text-center font-light shadow-2xl hover:scale-105 ">
+        <div className=" py-3  font-two text-3xl dark:text-gray-100  text-neutral-800">
           {name}
         </div>
         <div className=" mb-5  font-two dark:text-gray-100   text-neutral-800">

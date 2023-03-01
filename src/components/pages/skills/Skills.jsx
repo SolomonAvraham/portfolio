@@ -13,25 +13,28 @@ export default function Skills() {
     { name: "Node.js", img: "icons/node-js.png" },
     { name: "Express.js", img: "icons/Express-js.png" },
     { name: "MongoDB", img: "icons/MongoDB.png" },
+    { name: "Git", img: "icons/Git.svg" },
     { name: "GitHub", img: "icons/github.png" },
+
+  
   ];
   const stackCircular = [
     {
       no: 1,
       name: "Front-end",
-      value: 82,
+      value: 90,
       text: "82%",
     },
     {
       no: 2,
       name: "Web Dev",
-      value: 84,
+      value: 80,
       text: "84%",
     },
     {
       no: 3,
       name: "Back-end",
-      value: 79,
+      value: 85,
       text: "79%",
     },
   ];

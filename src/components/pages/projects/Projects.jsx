@@ -6,9 +6,9 @@ export default function Projects() {
     {
       name: "Property Pro",
       img: "others/1.png",
-      technology: " MongoDB, Express.js, React.js, Node.js, Typescript & Refine",
+      technology: " MongoDB, Express.js, React.js, Node.js, Typescript & Refine.",
       description:
-        "the application provides information about rental and sale houses near your area, user can easily be real estate agents by registering for the application and posting their will. I used a new framework that goes by the name Refine. which comes with built-in templates.very helpful tool.",
+        "The application provides information about rental and sale houses near your area, user can easily be real estate agents by registering for the application and posting their will. I used a new framework that goes by the name Refine. which comes with built-in templates.very helpful tool.",
       github: "https://github.com/SolomonAvraham/refine_dashboard",
       projectLink: "https://property-pro.netlify.app/",
     },
