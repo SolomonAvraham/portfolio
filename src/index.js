@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import  PageNotFound from "./components/pages/pageNotFound/PageNotFound";
+import PageNotFound from "./components/sections/pageNotFound/PageNotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route  path="/" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

@@ -6,7 +6,7 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
-export default function intro() {
+export default function Intro() {
   const socialMedia = [
     {
       url: "https://github.com/SolomonAvraham",
@@ -27,8 +27,8 @@ export default function intro() {
   ];
   return (
     <>
-      <section className=" bg-me-one	  bg-cover   bg-fixed ">
-        <div className="  h-full   bg-gradient-to-t from-slate-500  py-52   dark:bg-gradient-to-bl ">
+      <section className=" bg-me-one bg-cover bg-fixed ">
+        <div className="  h-full dark:bg-black dark:bg-opacity-75   bg-gradient-to-t from-gray-300  py-52 ">
           <div className="relative mx-auto flex h-80 w-80 justify-center overflow-hidden rounded-full border-2 border-solid border-gray-400  bg-gradient-to-b from-slate-400 dark:border-zinc-400 dark:bg-yellow-100 md:h-96 md:w-96  ">
             <img
               className=" mt-5   h-full opacity-70 drop-shadow-2xl dark:hidden  "

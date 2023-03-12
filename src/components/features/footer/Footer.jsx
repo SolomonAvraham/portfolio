@@ -26,7 +26,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer id="footer" className="   bottom-2 bg-gradient-to-b from-slate-400 to-slate-100 py-5  dark:bg-gradient-to-t">
+    <footer id="footer" className=" bg-gradient-to-t from-gray-500 to-gray-300 py-5  dark:bg-gradient-to-t">
       <div className="flex flex-col items-center justify-center gap-3 py-5">
         <div className="flex ">
           {socialMedia.map((item, index) => (

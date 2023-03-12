@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 export default function Skills() {
   const stackArray = [
     { name: "HTML", img: "icons/html-5.png" },
@@ -15,8 +15,6 @@ export default function Skills() {
     { name: "MongoDB", img: "icons/MongoDB.png" },
     { name: "Git", img: "icons/Git.svg" },
     { name: "GitHub", img: "icons/github.png" },
-
-  
   ];
   const stackCircular = [
     {
@@ -40,8 +38,12 @@ export default function Skills() {
   ];
   return (
     <>
-      <section className="     bg-me-two  bg-cover bg-fixed ">
-        <div className=" h-full   bg-gradient-to-b from-slate-500  py-24   dark:bg-gradient-to-tl">
+      <section className=" relative  bg-me-two  bg-cover bg-fixed ">
+             {/* <button className=" absolute top-0   right-10   ">
+          <BsFillArrowUpCircleFill />
+        </button> */}
+        <div className=" h-full bg-gradient-to-b from-gray-300 py-24 dark:bg-black dark:bg-opacity-50 ">
+     
           <h3 className=" text-center    font-one text-7xl dark:text-yellow-100">
             My Skills
           </h3>

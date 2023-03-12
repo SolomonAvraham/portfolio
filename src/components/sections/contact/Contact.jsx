@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <>
       <section className=" bg-me-one-left bg-cover bg-fixed ">
-        <div className="     bg-gradient-to-t from-slate-400  dark:bg-gradient-to-b">
+        <div className="bg-gray-300 bg-opacity-50  dark:bg-black dark:bg-opacity-40 dark:bg-gradient-to-b ">
           <h3 className="py-10 text-center font-one  text-7xl dark:text-yellow-100 ">
             Contact me
           </h3>

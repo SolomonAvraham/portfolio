@@ -16,8 +16,8 @@ export default function Projects() {
 
   return (
     <>
-      <section className=" dark: bg-projects bg-fixed bg-center">
-        <div className="h-full bg-gradient-to-b   from-slate-400 to-transparent  py-24  text-center dark:bg-gradient-to-t  ">
+      <section className=" border-4 border-solid border-gray-300 bg-projects   bg-contain bg-center dark:border-gray-500">
+        <div className="h-full bg-gradient-to-b py-24  text-center  dark:bg-black dark:bg-opacity-30  ">
           <h1 className="   font-one text-7xl   dark:text-yellow-100	  ">
             Projects
           </h1>
